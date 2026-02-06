@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="spotifyHome.css" rel="stylesheet">
+    </head>
+    <body>
+            
+        <nav>
+            <ul>
+                    <li class="brand"><img src="image/logo.png" >Spotify</li>
+                    <li class="Search"><input type="search" placeholder="Search Songs" id="Search"></li>
+                    <div class="info">
+                    <li id="Download">Downloaded Songs</li>
+                    <li id="New">New Released</li>
+                    </div>
+            </ul>
+
+        </nav>
+        <div class="container">
+            <div class="leftContainer">
+            Listened Songs
+            <button onclick="window.open('song.html')">Best of NCS</button>
+            <button onclick="window.open('Mahadev.html')">Best of Rabindra Sangeet</button>
+            <button onclick="window.open('Arijit.html')">Arijit Singh</button>
+            <button onclick="window.open('IndianArmy.html')">Indian Army</button>
+            <button onclick="window.open('karan.html')">Karan Aujla</button>
+            </div>
+            <div class="middleContainer">
+            Podcast
+            <button>ABIR</button>
+            <button>ABIR</button>
+            <button>ABIR</button>
+            <button>ABIR</button>
+            <button>ABIR</button>
+            </div>
+            <div class="rightContainer">
+            Albums
+            <button>ABIR</button>
+            <button>ABIR</button>
+            <button>ABIR</button>
+            <button>ABIR</button>
+            <button>ABIR</button>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+            <div class="icons">
+                <i class="fas fa-3x fa-step-backward" id="previous"></i>
+                <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+                <i class="fas fa-3x fa-step-forward" id="next"></i>
+            </div>
+
+            <div class="songInfo">
+            <img src="playing.gif" width="42px" id="gif"> <span id="masterSongName">Warriyo-Mortals(feat.Laura Brehm)[NCS Release]</span>
+            </div>
+        </div>
+
+
+
+        <script src="https://kit.fontawesome.com/d1bd7ada8b.js" crossorigin="anonymous"></script>
+        <script src="spotifyHome.js"></script>
+    </body>
+</html>
